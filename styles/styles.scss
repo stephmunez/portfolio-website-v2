@@ -1,0 +1,35 @@
+@import 'fonts.scss';
+@import 'globals.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-h1 {
+    @apply font-['SF_Mono'] text-[1rem] font-normal leading-normal tracking-normal;
+  }
+
+  .font-h2 {
+    @apply font-['Calibre'] text-[2.5rem] font-semibold leading-[2.625rem] tracking-[-0.36px];
+  }
+
+  .font-h3 {
+    @apply font-['Calibre'] text-[2rem] font-normal leading-9 tracking-[-0.29px];
+  }
+
+  .font-body-1 {
+    @apply font-['SF_Mono'] text-[0.875rem] font-normal leading-[1.625rem] tracking-normal;
+  }
+
+  .font-body-2 {
+    @apply font-['SF_Mono'] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal;
+  }
+
+  .btn {
+    @apply w-max rounded-[4px] border border-solid border-aquamarine px-8 py-4 font-["SF_Mono"] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] text-aquamarine hover:bg-aquamarine/10 active:bg-aquamarine/10;
+  }
+
+  .btn-hero {
+    @apply flex h-12 w-[200px] items-center  rounded-[0.25rem] border border-solid border-aquamarine hover:bg-aquamarine/10 active:bg-aquamarine/10;
+  }
+}

@@ -7,6 +7,10 @@ export default function Home() {
       <PageHead>
         <title>Stephen Joseph | Home</title>
       </PageHead>
+
+      <div>
+        <h2 className='text-aquamarine font-h2'>Hello world</h2>
+      </div>
     </>
   );
 }
