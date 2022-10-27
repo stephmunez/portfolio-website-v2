@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Logo from '../../atoms/Logo';
-import Hamburger from '../../atoms/icons/Hamburger';
+import Logo from '../icons/Logo';
+import Hamburger from '../icons/Hamburger';
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <header className='mt-8 mb-10 flex w-full flex-col items-center'>
         <nav className='flex w-[82.93%] items-center justify-between'>
           <Link href='/'>
-            <a>
+            <a className='group'>
               <Logo />
             </a>
           </Link>

@@ -25,6 +25,10 @@
     @apply font-['SF_Mono'] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal;
   }
 
+  .font-nav {
+    @apply font-['SF_Mono'] text-[0.875rem] font-normal leading-[0.875rem] tracking-[2px] text-light-slate hover:text-aquamarine;
+  }
+
   .btn {
     @apply w-max rounded-[4px] border border-solid border-aquamarine px-8 py-4 font-["SF_Mono"] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] text-aquamarine hover:bg-aquamarine/10 active:bg-aquamarine/10;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hamburger = () => {
+const IconHamburger = () => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='24' height='13'>
       <g fill='#CCD6F6' fillRule='evenodd'>
@@ -10,4 +10,4 @@ const Hamburger = () => {
   );
 };
 
-export default Hamburger;
+export default IconHamburger;
