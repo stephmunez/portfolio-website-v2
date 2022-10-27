@@ -7,7 +7,8 @@
   background-color: #64ffda;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     outline: 0;
 
     &:after {
