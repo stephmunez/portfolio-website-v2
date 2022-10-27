@@ -23,7 +23,6 @@ export const getStaticProps = async () => {
 };
 
 const Portfolio = ({ projects }) => {
-  console.log(projects);
   return (
     <>
       <PageHead>
