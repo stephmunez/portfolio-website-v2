@@ -41,9 +41,9 @@ const About = () => {
               live on the internet.
             </p>
             <p className='font-body-1 text-light-slate'>
-              My interest in web development started back in 2020 when I decided
-              to try learning how to code during the corona virus lock down out
-              of boredom — turns out taking Jennifer Niederst Robbins&apos;s
+              My interest in web development started back in 2020 when I tried
+              learning how to code during the corona virus lock down out of
+              boredom — turns out taking Jennifer Niederst Robbins&apos;s
               Learning Web Design book made me fell in love with the craft!
             </p>
             <p className='font-body-1 text-light-slate'>

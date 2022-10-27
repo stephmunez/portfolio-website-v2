@@ -22,18 +22,22 @@
   }
 
   .font-body-2 {
-    @apply font-['SF_Mono'] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal;
+    @apply font-['Calibre'] text-[1.125rem] font-normal leading-[1.3] tracking-normal;
   }
 
   .font-nav {
-    @apply font-['SF_Mono'] text-[0.875rem] font-normal leading-[0.875rem] tracking-[2px] text-light-slate hover:text-aquamarine;
+    @apply font-['SF_Mono'] text-[0.875rem] font-normal leading-[0.875rem] tracking-[2px] text-light-slate transition-colors ease-in hover:text-aquamarine;
+  }
+
+  .font-stack {
+    @apply font-['SF_Mono'] text-[0.75rem] font-light leading-[1.3] tracking-normal;
   }
 
   .btn {
-    @apply w-max rounded-[4px] border border-solid border-aquamarine px-8 py-4 font-["SF_Mono"] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] text-aquamarine hover:bg-aquamarine/10 active:bg-aquamarine/10;
+    @apply w-max rounded-[4px] border border-solid border-aquamarine px-8 py-4 font-["SF_Mono"] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] text-aquamarine transition-colors ease-in hover:bg-aquamarine/10 active:bg-aquamarine/10;
   }
 
   .btn-hero {
-    @apply flex h-12 w-[200px] items-center  rounded-[0.25rem] border border-solid border-aquamarine hover:bg-aquamarine/10 active:bg-aquamarine/10;
+    @apply flex h-12 w-[200px] items-center  rounded-[0.25rem] border border-solid border-aquamarine transition-colors ease-in hover:bg-aquamarine/10 active:bg-aquamarine/10;
   }
 }

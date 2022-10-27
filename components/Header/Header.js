@@ -12,10 +12,8 @@ const Header = () => {
               <Logo />
             </a>
           </Link>
-          <button type='button'>
-            <div>
-              <Hamburger />
-            </div>
+          <button className='group' type='button'>
+            <Hamburger />
           </button>
         </nav>
       </header>

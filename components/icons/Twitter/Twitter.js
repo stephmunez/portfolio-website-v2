@@ -9,7 +9,7 @@ const IconTwitter = () => {
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
-      className='group-hover:stroke-aquamarine'
+      className='transition-colors ease-in group-hover:stroke-aquamarine group-active:stroke-aquamarine'
       width='24'
       height='24'
     >
