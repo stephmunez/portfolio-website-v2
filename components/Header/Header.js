@@ -1,23 +1,42 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import useScrollDirection from '../../hooks/useScrollDirection';
 import Link from 'next/link';
 import { Squash as Hamburger } from 'hamburger-react';
 import Logo from '../icons/Logo';
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const scrollDirection = useScrollDirection();
+
+  useEffect(() => {
+    scrollDirection === 'up' && setOpen(false);
+  }, [scrollDirection]);
+
   return (
     <>
-      <header className='mt-8 mb-10 flex w-full flex-col items-center'>
+      <header
+        className={`sticky top-0 z-50 mb-10 flex w-full flex-col items-center bg-navy py-2 shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] transition-all duration-500 ${
+          scrollDirection === 'down'
+            ? 'pointer-events-none invisible translate-y-[-100%] opacity-0'
+            : 'pointer-events-auto visible opacity-100'
+        }`}
+      >
         <nav className='relative flex w-[82.93%] items-center justify-between'>
           <Link href='/'>
             <a className='group'>
               <Logo />
             </a>
           </Link>
-          <div>
-            <Hamburger toggled={isOpen} toggle={setOpen} color='#64FFDA' />
+          <div className='md:hidden'>
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              color='#64FFDA'
+              rounded
+              label='Show menu'
+            />
             <aside
-              className={`absolute right-0 top-14 w-[59.46%] rounded-[4px] bg-light-navy py-10 transition-all duration-300 ease-in ${
+              className={`absolute right-0 top-20 w-[59.46%] rounded-[4px] bg-light-navy py-10 transition-all duration-300 ease-in ${
                 isOpen
                   ? 'pointer-events-auto visible opacity-100'
                   : 'pointer-events-none invisible opacity-0'
