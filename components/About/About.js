@@ -15,25 +15,39 @@ const skills = [
 
 const About = () => {
   return (
-    <section className='mb-16 flex w-[82.93%] flex-col'>
-      <div className='flex w-full flex-col gap-12'>
+    <section
+      id='about'
+      className='mb-16 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%]'
+    >
+      <div className='flex w-full flex-col gap-12 md:flex-row md:items-center md:gap-[4.313rem]'>
         <div className={styles.wrapper}>
-          <Image
-            className={styles.img}
-            src='/images/homepage/image-homepage-profile@2x.jpg'
-            alt='Stephen Joseph'
-            width='100%'
-            height='100%'
-            layout='responsive'
-            objectFit='cover'
-            objectPosition='center top'
-          />
+          <div className='md:hidden'>
+            <Image
+              className={styles.img}
+              src='/images/homepage/image-homepage-profile@2x.jpg'
+              alt='Stephen Joseph'
+              width='100%'
+              height='100%'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center top'
+            />
+          </div>
+          <div className='hidden md:block'>
+            <Image
+              className={styles.img}
+              src='/images/homepage/image-homepage-profile@2x.jpg'
+              alt='Stephen Joseph'
+              width='100%'
+              height='250%'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center top'
+            />
+          </div>
         </div>
 
-        <div
-          id='about'
-          className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12'
-        >
+        <div className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:w-[49.20%] md:py-14'>
           <h2 className='font-h2 text-aquamarine'>About Me</h2>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
@@ -84,7 +98,7 @@ const About = () => {
             </p>
           </div>
           <Link href='/portfolio'>
-            <a className='btn'>Go to portfolio</a>
+            <a className='btn mt-4'>Go to portfolio</a>
           </Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className='mb-24 flex w-[82.93%] flex-col'>
+    <section className='mb-24 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%]'>
       <div className='ml-[0.125rem] mb-4'>
         <h1 className='font-h1 text-aquamarine'>Hi, my name is</h1>
       </div>
@@ -11,7 +11,7 @@ const Hero = () => {
         <h3 className='font-h2 text-slate'>I build things for the web.</h3>
       </div>
       <div className='mb-8'>
-        <p className='text-slate/80'>
+        <p className='max-w-[33.75rem] text-slate/80'>
           I&apos;m a frontend developer who loves building engaging digital
           experiences. I focus on writing accessible HTML, using modern CSS
           practices and writing clean JavaScript.

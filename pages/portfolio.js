@@ -19,6 +19,7 @@ export const getStaticProps = async () => {
     props: {
       projects: res.items,
     },
+    revalidate: 60,
   };
 };
 
@@ -32,9 +33,13 @@ const Portfolio = ({ projects }) => {
       <Layout>
         <main className='flex w-full flex-col items-center'>
           <h1 className='invisible absolute'>Portfolio</h1>
-          <div className='mb-20 flex w-[82.93%] flex-col items-center gap-[4.5rem]'>
-            {projects.map((project) => (
-              <ProjectCard key={project.sys.id} project={project} />
+          <div className='mb-20 flex w-[82.93%] flex-col items-center gap-[4.5rem] md:mb-32 md:w-[89.71%] md:gap-24'>
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={project.sys.id}
+                project={project}
+                index={index}
+              />
             ))}
           </div>
           <CallToAction />
