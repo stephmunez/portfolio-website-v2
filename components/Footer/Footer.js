@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
           </Link>
 
-          <ul className='flex flex-col items-center gap-4 text-center uppercase md:flex-row xl:gap-8'>
+          <ul className='flex flex-col items-center gap-6 text-center uppercase md:flex-row xl:gap-8'>
             <li className='flex items-center'>
               <Link href='/'>
                 <a className='font-nav'>Home</a>
