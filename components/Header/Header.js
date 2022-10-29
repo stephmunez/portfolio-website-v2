@@ -28,7 +28,7 @@ const Header = () => {
             </a>
           </Link>
           <div className='hidden md:flex'>
-            <ul className='flex items-center gap-6 gap-8 text-center uppercase'>
+            <ul className='flex items-center gap-6 text-center uppercase xl:gap-8'>
               <li className='flex items-center'>
                 <Link href='/'>
                   <a className='font-nav'>Home</a>
