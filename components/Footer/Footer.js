@@ -6,8 +6,8 @@ import Twitter from '../icons/Twitter';
 
 const Footer = () => {
   return (
-    <footer className='flex w-full flex-col items-center bg-light-navy py-14 md:py-6'>
-      <div className='flex w-[89.71%] flex-col items-center gap-8 md:flex-row md:justify-between'>
+    <footer className='flex w-full flex-col items-center bg-light-navy py-14 md:py-6 xl:py-8'>
+      <div className='flex flex-col items-center gap-8 md:w-[89.71%] md:flex-row md:justify-between xl:w-[77.08%]'>
         <div className='flex flex-col items-center gap-10 md:flex-row md:gap-12'>
           <Link href='/'>
             <a className='group'>
@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
           </Link>
 
-          <ul className='flex flex-col items-center gap-4 text-center uppercase md:flex-row'>
+          <ul className='flex flex-col items-center gap-4 text-center uppercase md:flex-row xl:gap-8'>
             <li className='flex items-center'>
               <Link href='/'>
                 <a className='font-nav'>Home</a>

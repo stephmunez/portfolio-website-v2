@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './About.module.scss';
 import { v4 as uuidv4 } from 'uuid';
+import { motion } from 'framer-motion';
 
 const skills = [
   'JavaScript (ES6+)',
@@ -17,10 +18,16 @@ const About = () => {
   return (
     <section
       id='about'
-      className='mb-16 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%]'
+      className='mb-16 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%] xl:mb-40 xl:w-[77.08%]'
     >
-      <div className='flex w-full flex-col gap-12 md:flex-row md:items-center md:gap-[4.313rem]'>
-        <div className={styles.wrapper}>
+      <div className='flex w-full flex-col gap-12 md:flex-row md:items-center md:gap-[4.313rem] xl:gap-[7.813rem]'>
+        <motion.div
+          className={styles.wrapper}
+          initial={{ opacity: 0, translateX: -50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.5, ease: 'easeIn' }}
+          viewport={{ once: true }}
+        >
           <div className='md:hidden'>
             <Image
               className={styles.img}
@@ -33,7 +40,7 @@ const About = () => {
               objectPosition='center top'
             />
           </div>
-          <div className='hidden md:block'>
+          <div className='hidden md:block xl:hidden'>
             <Image
               className={styles.img}
               src='/images/homepage/image-homepage-profile@2x.jpg'
@@ -45,9 +52,27 @@ const About = () => {
               objectPosition='center top'
             />
           </div>
-        </div>
+          <div className='hidden xl:block'>
+            <Image
+              className={styles.img}
+              src='/images/homepage/image-homepage-profile@2x.jpg'
+              alt='Stephen Joseph'
+              width='100%'
+              height='100%'
+              layout='responsive'
+              objectFit='cover'
+              objectPosition='center top'
+            />
+          </div>
+        </motion.div>
 
-        <div className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:w-[49.20%] md:py-14'>
+        <motion.div
+          className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:w-[49.20%] md:py-14 xl:w-[34.48%]'
+          initial={{ opacity: 0, translateX: 50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.5, ease: 'easeIn' }}
+          viewport={{ once: true }}
+        >
           <h2 className='font-h2 text-aquamarine'>About Me</h2>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
@@ -76,7 +101,7 @@ const About = () => {
                 href='https://www.codeandtheory.com/'
               >
                 <a className='text-aquamarine hover:underline active:underline'>
-                  an advertising agency.
+                  a creative digital agency.
                 </a>
               </Link>
             </p>
@@ -100,7 +125,7 @@ const About = () => {
           <Link href='/portfolio'>
             <a className='btn mt-4'>Go to portfolio</a>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

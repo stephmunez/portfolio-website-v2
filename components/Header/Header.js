@@ -15,20 +15,20 @@ const Header = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 mb-10 flex w-full flex-col items-center bg-navy py-2 shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] transition-all duration-500 md:mb-16 md:py-6 ${
+        className={`sticky top-0 z-50 mb-10 flex w-full flex-col items-center bg-navy py-2 shadow-[0_10px_30px_-10px_rgba(2,12,27,0.7)] transition-all duration-500 md:mb-16 md:py-6 xl:mb-20 xl:py-8 ${
           scrollDirection === 'down'
             ? 'pointer-events-none invisible translate-y-[-100%] opacity-0'
             : 'pointer-events-auto visible opacity-100'
         }`}
       >
-        <nav className='relative flex w-[82.93%] items-center justify-between md:w-[89.71%]'>
+        <nav className='relative flex w-[82.93%] items-center justify-between md:w-[89.71%] xl:w-[77.08%]'>
           <Link href='/'>
             <a className='group'>
               <Logo />
             </a>
           </Link>
           <div className='hidden md:flex'>
-            <ul className='flex items-center gap-6 text-center uppercase'>
+            <ul className='flex items-center gap-6 gap-8 text-center uppercase'>
               <li className='flex items-center'>
                 <Link href='/'>
                   <a className='font-nav'>Home</a>
