@@ -49,7 +49,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href='https://twitter.com/stephjoseph__'>
+            <Link href='https://www.linkedin.com/in/stephen-joseph/'>
               <a className='group' target='_blank'>
                 <LinkedIn />
               </a>
