@@ -92,7 +92,7 @@ const About = () => {
                 href='https://www.unit.network/'
               >
                 <a className='text-aquamarine hover:underline active:underline'>
-                  a crypto start-up
+                  a Web3 start-up
                 </a>
               </Link>
               , and at{' '}
