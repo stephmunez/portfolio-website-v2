@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import ScrollIntoView from 'react-scroll-into-view';
 
 const Hero = () => {
@@ -35,8 +36,14 @@ const Hero = () => {
       >
         <p className='max-w-[33.75rem] text-slate/80'>
           I&apos;m a frontend developer who loves building engaging digital
-          experiences. I focus on writing accessible HTML, using modern CSS
-          practices and writing clean JavaScript.
+          experiences. Currently, I focus on writing accessible HTML, using
+          modern CSS practices and writing clean JavaScript at{' '}
+          <Link href='https://make.technology/'>
+            <a className='text-aquamarine underline hover:no-underline'>
+              Make Technology
+            </a>
+          </Link>
+          .
         </p>
       </motion.div>
       <ScrollIntoView selector='#about' scrollOptions={{ behavior: 'smooth' }}>

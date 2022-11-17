@@ -87,23 +87,24 @@ const About = () => {
             </p>
             <p className='font-body-1 text-light-slate'>
               Fast-forward to today, I’ve had the privilege of working at{' '}
-              <Link
-                className='text-aquamarine hover:underline active:underline'
-                href='https://www.unit.network/'
-              >
+              <Link href='https://www.unit.network/'>
                 <a className='text-aquamarine hover:underline active:underline'>
                   a Web3 start-up
                 </a>
               </Link>
-              , and at{' '}
-              <Link
-                className='text-aquamarine hover:underline'
-                href='https://www.codeandtheory.com/'
-              >
+              , at{' '}
+              <Link href='https://www.codeandtheory.com/'>
                 <a className='text-aquamarine hover:underline active:underline'>
-                  a creative digital agency.
+                  a creative digital agency
                 </a>
               </Link>
+              , and currently at{' '}
+              <Link href='https://make.technology/'>
+                <a className='text-aquamarine hover:underline active:underline'>
+                  Make Technology
+                </a>
+              </Link>
+              .
             </p>
             <p className='font-body-1 text-light-slate'>
               Here are a few technologies I’ve been working with recently:
