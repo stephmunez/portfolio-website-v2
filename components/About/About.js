@@ -81,9 +81,9 @@ const About = () => {
             </p>
             <p className='font-body-1 text-light-slate'>
               My interest in web development started back in 2020 when I tried
-              learning how to code during the corona virus lock down out of
-              boredom — turns out taking Jennifer Niederst Robbins&apos;s
-              Learning Web Design book made me fell in love with the craft!
+              learning how to code during the covid lock down out of boredom —
+              turns out taking Jennifer Niederst Robbins&apos;s Learning Web
+              Design book made me fall in love with the craft!
             </p>
             <p className='font-body-1 text-light-slate'>
               Fast-forward to today, I’ve had the privilege of working at{' '}
