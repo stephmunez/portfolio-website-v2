@@ -9,6 +9,7 @@ const skills = [
   'JavaScript (ES6+)',
   'TypeScript',
   'React',
+  'Vue.js',
   'Gatsby',
   'Next.js',
   'HTML and CSS',
