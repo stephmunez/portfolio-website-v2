@@ -12,6 +12,7 @@ const skills = [
   'Vue.js',
   'Gatsby',
   'Next.js',
+  'Nuxt.js',
   'HTML and CSS',
 ];
 
