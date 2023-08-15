@@ -121,8 +121,8 @@ const About = () => {
             <p className='font-body-1 text-light-slate'>
               When I’m not coding, you’ll find me in a corner or outdoors. I
               love reading books, and being out in nature whether that’s going
-              for a walk, run, or motorbike ride. I’d love you to check out my
-              work.
+              for a walk, run, swim, or a motorbike ride. I’d love you to check
+              out my work.
             </p>
           </div>
           <Link href='/portfolio'>
