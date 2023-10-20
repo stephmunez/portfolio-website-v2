@@ -40,7 +40,7 @@ const Hero = () => {
           modern CSS practices and writing clean JavaScript at{' '}
           <Link href='https://www.meetsoci.com/'>
             <a className='text-aquamarine underline hover:no-underline'>
-              SOCi, Inc.
+              SOCi
             </a>
           </Link>
           .
