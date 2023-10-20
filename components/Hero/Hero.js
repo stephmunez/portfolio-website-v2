@@ -38,9 +38,9 @@ const Hero = () => {
           I&apos;m a frontend developer who loves building engaging digital
           experiences. Currently, I focus on writing accessible HTML, using
           modern CSS practices and writing clean JavaScript at{' '}
-          <Link href='https://make.technology/'>
+          <Link href='https://www.meetsoci.com/'>
             <a className='text-aquamarine underline hover:no-underline'>
-              Make Technology
+              SOCi, Inc.
             </a>
           </Link>
           .

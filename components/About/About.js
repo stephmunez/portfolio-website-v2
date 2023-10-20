@@ -94,16 +94,22 @@ const About = () => {
                   a Web3 start-up
                 </a>
               </Link>
-              , at{' '}
+              , at a couple of digital agencies:{' ('}
               <Link href='https://www.codeandtheory.com/'>
                 <a className='text-aquamarine hover:underline active:underline'>
-                  a creative digital agency
+                  Code and Theory
                 </a>
-              </Link>
-              , and currently at{' '}
+              </Link>{' '}
+              and{' '}
               <Link href='https://make.technology/'>
                 <a className='text-aquamarine hover:underline active:underline'>
                   Make Technology
+                </a>
+              </Link>
+              {')'}, and currently at{' '}
+              <Link href='https://www.meetsoci.com/'>
+                <a className='text-aquamarine hover:underline active:underline'>
+                  SOCi, Inc.
                 </a>
               </Link>
               .
