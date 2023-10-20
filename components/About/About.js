@@ -10,9 +10,7 @@ const skills = [
   'TypeScript',
   'React',
   'Vue.js',
-  'Gatsby',
-  'Next.js',
-  'Nuxt.js',
+  'Firebase',
   'HTML and CSS',
 ];
 
