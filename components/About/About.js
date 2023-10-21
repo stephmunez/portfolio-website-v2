@@ -92,7 +92,7 @@ const About = () => {
                   a Web3 start-up
                 </a>
               </Link>
-              , at a couple of digital agencies:{' ('}
+              , at a couple of creative digital agencies:{' ('}
               <Link href='https://www.codeandtheory.com/'>
                 <a className='text-aquamarine hover:underline active:underline'>
                   Code and Theory
