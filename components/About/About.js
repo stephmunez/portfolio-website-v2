@@ -14,6 +14,8 @@ const skills = [
   'HTML and CSS',
 ];
 
+const currentlyLearning = ['Svelte'];
+
 const About = () => {
   return (
     <section
@@ -118,6 +120,16 @@ const About = () => {
           </div>
           <ul className={styles.skillsList}>
             {skills.map((skill) => (
+              <li key={uuidv4()}>{skill}</li>
+            ))}
+          </ul>
+          <div>
+            <p className='font-body-1 text-light-slate'>
+              I’m currently learning...
+            </p>
+          </div>
+          <ul className={styles.skillsList}>
+            {currentlyLearning.map((skill) => (
               <li key={uuidv4()}>{skill}</li>
             ))}
           </ul>
