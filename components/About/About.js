@@ -125,7 +125,7 @@ const About = () => {
           </ul>
           <div>
             <p className='font-body-1 text-light-slate'>
-              I’m currently learning...
+              and I’m currently learning...
             </p>
           </div>
           <ul className={styles.skillsList}>
