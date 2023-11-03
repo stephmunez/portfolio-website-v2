@@ -14,7 +14,7 @@ const skills = [
   'HTML and CSS',
 ];
 
-const currentlyLearning = ['Svelte'];
+const currentlyLearning = ['Svelte', 'SvelteKit'];
 
 const About = () => {
   return (
