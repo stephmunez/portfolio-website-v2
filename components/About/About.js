@@ -11,7 +11,10 @@ const skills = [
   'React',
   'Vue.js',
   'Firebase',
-  'HTML and CSS',
+  'HTML5',
+  'CSS3',
+  'Sass',
+  'Tailwind CSS',
 ];
 
 const currentlyLearning = ['Svelte', 'SvelteKit'];
