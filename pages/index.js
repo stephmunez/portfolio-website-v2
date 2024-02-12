@@ -12,7 +12,7 @@ const Home = () => {
         {/* SEO */}
         <meta
           name='description'
-          content="I'm a frontend developer who loves building engaging digital experiences. Currently, I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript"
+          content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <link rel='canonical' href='https://stephjoseph.dev/' />
         <meta
@@ -23,7 +23,7 @@ const Home = () => {
         <meta property='og:title' content='Stephen Joseph' />
         <meta
           property='og:description'
-          content="I'm a frontend developer who loves building engaging digital experiences. Currently, I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript"
+          content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <meta property='og:url' content='https://stephjoseph.dev/' />
         <meta property='og:site_name' content="Stephen Joseph's Website" />
