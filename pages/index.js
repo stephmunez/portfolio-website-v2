@@ -20,13 +20,16 @@ const Home = () => {
           content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
         />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Stephen Joseph' />
+        <meta
+          property='og:title'
+          content='Stephen Joseph | Frontend Developer'
+        />
         <meta
           property='og:description'
           content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <meta property='og:url' content='https://stephjoseph.dev/' />
-        <meta property='og:site_name' content="Stephen Joseph's Website" />
+        <meta property='og:site_name' content='Stephen Joseph' />
         <meta
           property='og:image'
           content='/images/homepage/image-homepage-profile@2x.jpg'
