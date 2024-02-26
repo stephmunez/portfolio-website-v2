@@ -138,10 +138,10 @@ const About = () => {
           </ul>
           <div>
             <p className='font-body-1 text-light-slate'>
-              When I’m not coding, you’ll find me in a corner or outdoors. I
-              love reading books, and being out in nature whether that’s going
-              for a walk, run, swim, or a motorbike ride. I’d love you to check
-              out my work.
+              When I’m not coding, you’ll find me getting my sweat on to offset
+              long hours of sitting. I love lifting weights, running outdoors,
+              and swimming laps, but I’ve yet to explore cycling to complete the
+              trio! I’d love for you to check out my work.
             </p>
           </div>
           <Link href='/portfolio'>
