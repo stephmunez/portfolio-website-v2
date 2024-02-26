@@ -112,7 +112,7 @@ const About = () => {
               {')'}, and currently at{' '}
               <Link href='https://www.meetsoci.com/'>
                 <a className='text-aquamarine hover:underline active:underline'>
-                  SOCi
+                  a marketing platform for multi-location brands
                 </a>
               </Link>
               .
