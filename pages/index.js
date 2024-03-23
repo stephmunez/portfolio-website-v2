@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <PageHead>
-        <title>Stephen Joseph | Frontend Developer</title>
+        <title>Stephen Muñez | Frontend Developer</title>
         {/* SEO */}
         <meta
           name='description'
@@ -22,14 +22,14 @@ const Home = () => {
         <meta property='og:type' content='website' />
         <meta
           property='og:title'
-          content='Stephen Joseph | Frontend Developer'
+          content='Stephen Muñez | Frontend Developer'
         />
         <meta
           property='og:description'
           content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <meta property='og:url' content='https://stephjoseph.dev/' />
-        <meta property='og:site_name' content='Stephen Joseph' />
+        <meta property='og:site_name' content='Stephen Muñez' />
         <meta
           property='og:image'
           content='/images/homepage/image-homepage-profile@2x.jpg'
