@@ -81,7 +81,7 @@ const About = () => {
           <h2 className='font-h2 text-aquamarine'>About Me</h2>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Hello, my name is Stephen Muñez and I enjoy creating things that
+              Hello, I&apos;m Stephen Muñez and I enjoy creating things that
               live on the web.
             </p>
             <p className='font-body-1 text-light-slate'>
