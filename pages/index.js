@@ -14,7 +14,7 @@ const Home = () => {
           name='description'
           content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
-        <link rel='canonical' href='https://stephjoseph.dev/' />
+        <link rel='canonical' href='https://stephmunez.dev/' />
         <meta
           name='robots'
           content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -28,7 +28,7 @@ const Home = () => {
           property='og:description'
           content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
-        <meta property='og:url' content='https://stephjoseph.dev/' />
+        <meta property='og:url' content='https://stephmunez.dev/' />
         <meta property='og:site_name' content='Stephen Muñez' />
         <meta
           property='og:image'
