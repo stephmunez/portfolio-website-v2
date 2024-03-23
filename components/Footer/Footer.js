@@ -35,21 +35,14 @@ const Footer = () => {
         </div>
         <ul className='flex items-center justify-between gap-4 md:justify-start'>
           <li>
-            <Link href='https://github.com/stephjoseph'>
+            <Link href='https://github.com/stephmunez'>
               <a className='group' target='_blank'>
                 <Github />
               </a>
             </Link>
           </li>
           <li>
-            <Link href='https://twitter.com/stephjoseph__'>
-              <a className='group' target='_blank'>
-                <Twitter />
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href='https://www.linkedin.com/in/stephen-joseph/'>
+            <Link href='https://www.linkedin.com/in/stephen-munez'>
               <a className='group' target='_blank'>
                 <LinkedIn />
               </a>
