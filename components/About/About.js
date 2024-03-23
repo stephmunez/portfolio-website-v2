@@ -37,7 +37,7 @@ const About = () => {
             <Image
               className={styles.img}
               src='/images/homepage/image-homepage-profile@2x.jpg'
-              alt='Stephen Joseph'
+              alt='Stephen Muñez'
               width='100%'
               height='100%'
               layout='responsive'
@@ -49,7 +49,7 @@ const About = () => {
             <Image
               className={styles.img}
               src='/images/homepage/image-homepage-profile@2x.jpg'
-              alt='Stephen Joseph'
+              alt='Stephen Muñez'
               width='100%'
               height='250%'
               layout='responsive'
@@ -61,7 +61,7 @@ const About = () => {
             <Image
               className={styles.img}
               src='/images/homepage/image-homepage-profile@2x.jpg'
-              alt='Stephen Joseph'
+              alt='Stephen Muñez'
               width='100%'
               height='100%'
               layout='responsive'
@@ -81,7 +81,7 @@ const About = () => {
           <h2 className='font-h2 text-aquamarine'>About Me</h2>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Hello, my name is Stephen Joseph and I enjoy creating things that
+              Hello, my name is Stephen Muñez and I enjoy creating things that
               live on the web.
             </p>
             <p className='font-body-1 text-light-slate'>
