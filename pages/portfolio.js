@@ -27,7 +27,7 @@ const Portfolio = ({ projects }) => {
   return (
     <>
       <PageHead>
-        <title>Stephen Joseph | Portfolio</title>
+        <title>Stephen Muñez | Portfolio</title>
       </PageHead>
 
       <Layout>
