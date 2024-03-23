@@ -18,7 +18,7 @@ const Hero = () => {
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5, ease: 'easeIn', delay: 0.2 }}
       >
-        <h2 className='font-h2 text-light-slate'>Stephen Joseph.</h2>
+        <h2 className='font-h2 text-light-slate'>Stephen Muñez.</h2>
       </motion.div>
       <motion.div
         className='mb-2'
@@ -39,9 +39,7 @@ const Hero = () => {
           experiences. Currently, I focus on writing accessible HTML, using
           modern CSS practices and writing clean JavaScript at{' '}
           <Link href='https://www.meetsoci.com/'>
-            <a className='text-aquamarine underline hover:no-underline'>
-              SOCi
-            </a>
+            <a className='text-aquamarine underline hover:no-underline'>SOCi</a>
           </Link>
           .
         </p>
