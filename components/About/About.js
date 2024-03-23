@@ -81,8 +81,8 @@ const About = () => {
           <h2 className='font-h2 text-aquamarine'>About Me</h2>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Hello, I&apos;m Stephen Muñez and I enjoy creating things that
-              live on the web.
+              Hello, I’m Stephen Muñez and I enjoy creating things that live on
+              the web.
             </p>
             <p className='font-body-1 text-light-slate'>
               My interest in web development started back in 2020 when I tried
@@ -136,12 +136,15 @@ const About = () => {
               <li key={uuidv4()}>{skill}</li>
             ))}
           </ul>
-          <div>
+          <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
               When I’m not coding, you’ll find me getting my sweat on to offset
               long hours of sitting. I enjoy lifting weights, running outdoors,
               and swimming laps, but I’ve yet to explore cycling to complete the
-              trio! I’d love for you to check out my work.
+              trio!
+            </p>
+            <p className='font-body-1 text-light-slate'>
+              I’d love for you to check out my work.
             </p>
           </div>
           <Link href='/portfolio'>
