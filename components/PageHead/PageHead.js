@@ -34,7 +34,7 @@ const PageHead = ({ children }) => {
           content='/favicons/browserconfig.xml'
         />
         <meta name='theme-color' content='#0a192f' />
-        <meta name='description' content='Stephen Joseph portfolio website' />
+        <meta name='description' content='Stephen Muñez portfolio website' />
       </Head>
     </>
   );
