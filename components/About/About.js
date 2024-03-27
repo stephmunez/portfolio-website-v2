@@ -18,7 +18,7 @@ const skills = [
   'Tailwind CSS',
 ];
 
-const currentlyLearning = ['Node.js', 'Express.js'];
+const currentlyLearning = ['Node.js', 'Express.js', 'Python'];
 
 const About = () => {
   return (
