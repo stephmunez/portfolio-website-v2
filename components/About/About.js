@@ -10,6 +10,7 @@ const skills = [
   'TypeScript',
   'React',
   'Vue.js',
+  'Svelte',
   'Firebase',
   'HTML5',
   'CSS3',
@@ -17,7 +18,7 @@ const skills = [
   'Tailwind CSS',
 ];
 
-const currentlyLearning = ['Svelte', 'SvelteKit'];
+const currentlyLearning = ['Node.js', 'Express.js'];
 
 const About = () => {
   return (
