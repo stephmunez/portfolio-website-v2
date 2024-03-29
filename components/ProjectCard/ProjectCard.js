@@ -6,7 +6,7 @@ import styles from './ProjectCard.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index, type }) => {
   const { title, thumbnail, description, stack, repository, url } =
     project.fields;
   return (
@@ -57,11 +57,13 @@ const ProjectCard = ({ project, index }) => {
             ))}
           </ul>
           <div className='flex items-center gap-3'>
-            <Link href={repository}>
-              <a className='group' target='_blank'>
-                <Github />
-              </a>
-            </Link>
+            {type === 'personal' && (
+              <Link href={repository}>
+                <a className='group' target='_blank'>
+                  <Github />
+                </a>
+              </Link>
+            )}
             <Link href={url}>
               <a className='group' target='_blank'>
                 <External />
