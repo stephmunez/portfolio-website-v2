@@ -56,7 +56,7 @@ const Portfolio = ({ personalProjects, workProjects }) => {
             ))}
           </div>
           <h2 className='font-h2 mb-10 w-[82.93%] text-light-slate md:mb-12 md:w-[89.71%] md:text-[3.5rem] xl:mb-16 xl:w-[77.08%]'>
-            Personal Projects
+            Notable Personal Projects
           </h2>
           <div className='mb-20 flex w-[82.93%] flex-col items-center gap-[4.5rem] md:mb-32 md:w-[89.71%] md:gap-24 xl:mb-40 xl:w-[77.08%] xl:gap-32'>
             {personalProjects.map((project, index) => (
