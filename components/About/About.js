@@ -119,7 +119,7 @@ const About = () => {
               .
             </p>
             <p className='font-body-1 text-light-slate'>
-              I’ve adopted a “technology-agnostic“ approach to development,
+              I’ve adopted a ’technology-agnostic’ approach to development,
               which is something I learned from my mentors. Here are a few
               technologies I’ve been working with recently:
             </p>
