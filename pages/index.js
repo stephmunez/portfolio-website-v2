@@ -1,8 +1,8 @@
-import PageHead from '../components/PageHead';
-import Layout from '../components/Layout';
 import About from '../components/About';
-import Hero from '../components/Hero';
 import CallToAction from '../components/CallToAction';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
 
 const Home = () => {
   return (
@@ -32,7 +32,7 @@ const Home = () => {
         <meta property='og:site_name' content='Stephen Muñez' />
         <meta
           property='og:image'
-          content='/images/homepage/image-homepage-profile@2x.jpg'
+          content='https://stephmunez.dev/images/homepage/image-homepage-profile@2x.jpg'
         />
       </PageHead>
 
