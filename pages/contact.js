@@ -9,6 +9,8 @@ import LinkedIn from '../components/icons/LinkedIn';
 const Contact = () => {
   const form = useRef();
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const validateForm = () => {
     const errors = {};
@@ -44,19 +46,33 @@ const Contact = () => {
     e.preventDefault();
 
     if (validateForm()) {
+      setIsSubmitting(true);
       emailjs
         .sendForm('service_i9xyjrr', 'template_jmd3b0i', form.current, {
           publicKey: 'dcFsyWMEj1bpaV__F',
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            setIsMessageSent(true);
+            setIsSubmitting(false);
+            clearForm();
+            setTimeout(() => {
+              setIsMessageSent(false); // Reset message after 3 seconds (adjust as needed)
+            }, 3000); // 3000 milliseconds = 3 seconds
           },
           (error) => {
             console.log('FAILED...', error.text);
+            setIsSubmitting(false);
           }
         );
     }
+  };
+
+  const clearForm = () => {
+    form.current.user_name.value = '';
+    form.current.user_email.value = '';
+    form.current.message.value = '';
+    setErrors({});
   };
 
   return (
@@ -178,8 +194,12 @@ const Contact = () => {
                 )}
               </div>
 
-              <button type='submit' className='btn'>
-                Send Message
+              <button
+                type='submit'
+                className={`${isMessageSent && 'bg-aquamarine/10'} btn`}
+                disabled={isSubmitting}
+              >
+                {isMessageSent ? 'Message Sent!' : 'Send Message'}
               </button>
             </form>
           </section>
