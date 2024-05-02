@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Layout from '../components/Layout';
 import PageHead from '../components/PageHead';
 import Github from '../components/icons/Github';
@@ -8,23 +8,57 @@ import LinkedIn from '../components/icons/LinkedIn';
 
 const Contact = () => {
   const form = useRef();
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const errors = {};
+    let isValid = true;
+
+    // Validate name
+    if (!form.current.user_name.value.trim()) {
+      errors.name = 'Name is required';
+      isValid = false;
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (
+      !form.current.user_email.value.trim() ||
+      !emailRegex.test(form.current.user_email.value)
+    ) {
+      errors.email = 'Please enter a valid email address';
+      isValid = false;
+    }
+
+    // Validate message
+    if (!form.current.message.value.trim()) {
+      errors.message = 'Message is required';
+      isValid = false;
+    }
+
+    setErrors(errors);
+    return isValid;
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_i9xyjrr', 'template_jmd3b0i', form.current, {
-        publicKey: 'dcFsyWMEj1bpaV__F',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        }
-      );
+    if (validateForm()) {
+      emailjs
+        .sendForm('service_i9xyjrr', 'template_jmd3b0i', form.current, {
+          publicKey: 'dcFsyWMEj1bpaV__F',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          }
+        );
+    }
   };
+
   return (
     <>
       <PageHead>
@@ -85,9 +119,16 @@ const Contact = () => {
                   type='text'
                   name='user_name'
                   id='user_name'
-                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  className={`placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none ${
+                    errors.name && 'border border-red-500'
+                  }`}
                   placeholder='Jane Appleseed'
                 />
+                {errors.name && (
+                  <span className='font-body-1 w-max text-xs text-red-500'>
+                    {errors.name}
+                  </span>
+                )}
               </div>
 
               <div className='flex flex-col gap-2'>
@@ -101,9 +142,16 @@ const Contact = () => {
                   type='email'
                   name='user_email'
                   id='user_email'
-                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  className={`placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none ${
+                    errors.email && 'border border-red-500'
+                  }`}
                   placeholder='email@example.com'
                 />
+                {errors.email && (
+                  <span className='font-body-1 w-max text-xs text-red-500'>
+                    {errors.email}
+                  </span>
+                )}
               </div>
 
               <div className='flex flex-col gap-2'>
@@ -118,9 +166,16 @@ const Contact = () => {
                   id='message'
                   rows='5'
                   cols='32'
-                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  className={`placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none ${
+                    errors.message && 'border border-red-500'
+                  }`}
                   placeholder='How can I help?'
                 />
+                {errors.message && (
+                  <span className='font-body-1 w-max text-xs text-red-500'>
+                    {errors.message}
+                  </span>
+                )}
               </div>
 
               <button type='submit' className='btn'>
