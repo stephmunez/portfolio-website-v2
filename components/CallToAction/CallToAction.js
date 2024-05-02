@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const CallToAction = () => {
   return (
@@ -15,7 +15,7 @@ const CallToAction = () => {
           Interested in doing a project together?
         </h2>
         <div className='hidden h-px w-full bg-aquamarine md:block'></div>
-        <Link href='mailto:sjtmunez@gmail.com'>
+        <Link href='/contact'>
           <a className='btn md:min-w-[10.1rem]'>Contact Me</a>
         </Link>
       </div>
