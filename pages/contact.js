@@ -31,21 +31,21 @@ const Contact = () => {
         <title>Stephen Muñez | Contact Me</title>
       </PageHead>
       <Layout>
-        <main className='flex w-full flex-col items-center gap-8 overflow-hidden'>
+        <main className='flex w-full flex-col items-center gap-8 overflow-hidden md:gap-12'>
           <h1 className='invisible absolute'>Contact Me</h1>
-          <section className='flex w-[82.93%] flex-col gap-1 border-y border-solid border-aquamarine py-6 md:w-[89.71%] md:gap-4'>
-            <h2 className='font-h2 text-aquamarine'>Get in Touch</h2>
-            <div className='flex w-full flex-col gap-[0.875rem] md:gap-4'>
+          <section className='flex w-[82.93%] flex-col gap-1 border-y border-solid border-aquamarine pt-6 pb-8 md:w-[89.71%] md:gap-4 md:pt-8 md:pb-5 xl:w-[77.08%] xl:flex-row xl:gap-[7.813rem] xl:py-12'>
+            <h2 className='font-h2 text-aquamarine xl:w-[31.53%]'>
+              Get in Touch
+            </h2>
+            <div className='flex w-full flex-col gap-[0.875rem] md:gap-4 xl:w-[57.21%] xl:gap-6'>
               <p className='font-body-1 text-light-slate'>
-                I’d love to hear about what you’re working on and how I could
-                help. I’m currently looking for a new role and am open to a wide
-                range of opportunities. My preference would be to find a
-                position in a company in London. But I’m also happy to hear
-                about opportunites that don’t fit that description. I’m a
-                hard-working and positive person who will always approach each
-                task with a sense of purpose and attention to detail. Please do
-                feel free to check out my online profiles below and get in touch
-                using the form.
+                I’d love to chat about what you’re working on and how I could
+                contribute. I’m open to exploring various opportunities,
+                preferably remote positions. I bring a strong work ethic and a
+                positive attitude to everything I do, ensuring each project is
+                approached with purpose and attention to detail. Feel free to
+                reach out through the contact form below or check out my online
+                profiles for more information.
               </p>
               <ul className='flex items-center justify-start gap-4'>
                 <li>
@@ -65,17 +65,19 @@ const Contact = () => {
               </ul>
             </div>
           </section>
-          <section className='mb-20 flex w-[82.93%] flex-col gap-6 md:mb-24 md:w-[89.71%] md:gap-8'>
-            <h2 className='font-h2 text-aquamarine'>Contact Me</h2>
+          <section className='mb-20 flex w-[82.93%] flex-col gap-6 md:mb-24 md:w-[89.71%] md:gap-8 xl:mb-[6.875rem] xl:w-[77.08%] xl:flex-row xl:gap-[7.813rem]'>
+            <h2 className='font-h2 text-aquamarine xl:w-[31.53%]'>
+              Contact Me
+            </h2>
             <form
               ref={form}
               onSubmit={sendEmail}
-              className='flex w-full flex-col gap-6'
+              className='flex w-full flex-col gap-6 xl:w-[57.21%]'
             >
               <div className='flex flex-col gap-2'>
                 <label
                   className='font-body-1 w-max text-light-slate'
-                  for='user_name'
+                  htmlFor='user_name'
                 >
                   Name
                 </label>
@@ -91,7 +93,7 @@ const Contact = () => {
               <div className='flex flex-col gap-2'>
                 <label
                   className='font-body-1 w-max text-light-slate'
-                  for='user_email'
+                  htmlFor='user_email'
                 >
                   Email
                 </label>
@@ -107,7 +109,7 @@ const Contact = () => {
               <div className='flex flex-col gap-2'>
                 <label
                   className='font-body-1 w-max text-light-slate'
-                  for='message'
+                  htmlFor='message'
                 >
                   Message
                 </label>
