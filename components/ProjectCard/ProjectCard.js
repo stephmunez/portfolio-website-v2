@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import Github from '../icons/Github';
-import External from '../icons/External';
-import styles from './ProjectCard.module.scss';
 import { v4 as uuidv4 } from 'uuid';
-import { motion } from 'framer-motion';
+import External from '../icons/External';
+import Github from '../icons/Github';
+import styles from './ProjectCard.module.scss';
 
 const ProjectCard = ({ project, index, type }) => {
   const { title, thumbnail, description, stack, repository, url } =
@@ -40,7 +40,7 @@ const ProjectCard = ({ project, index, type }) => {
         <div className='flex flex-col gap-4'>
           <Link href={url}>
             <a target='_blank'>
-              <h2 className='font-h2 text-aquamarine transition-colors ease-in hover:text-light-slate active:text-light-slate md:text-[3rem]'>
+              <h2 className='font-h2 text-aquamarine transition-colors ease-in hover:text-light-slate active:text-light-slate'>
                 {title}
               </h2>
             </a>

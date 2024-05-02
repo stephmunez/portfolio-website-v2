@@ -1,0 +1,137 @@
+import emailjs from '@emailjs/browser';
+import Link from 'next/link';
+import React, { useRef } from 'react';
+import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
+import Github from '../components/icons/Github';
+import LinkedIn from '../components/icons/LinkedIn';
+
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_i9xyjrr', 'template_jmd3b0i', form.current, {
+        publicKey: 'dcFsyWMEj1bpaV__F',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
+  return (
+    <>
+      <PageHead>
+        <title>Stephen Muñez | Contact Me</title>
+      </PageHead>
+      <Layout>
+        <main className='flex w-full flex-col items-center gap-8 overflow-hidden md:gap-12'>
+          <h1 className='invisible absolute'>Contact Me</h1>
+          <section className='flex w-[82.93%] flex-col gap-1 border-y border-solid border-aquamarine pt-6 pb-8 md:w-[89.71%] md:gap-4 md:pt-8 md:pb-5 xl:w-[77.08%] xl:flex-row xl:gap-[7.813rem] xl:py-12'>
+            <h2 className='font-h2 text-aquamarine xl:w-[31.53%]'>
+              Get in Touch
+            </h2>
+            <div className='flex w-full flex-col gap-[0.875rem] md:gap-4 xl:w-[57.21%] xl:gap-6'>
+              <p className='font-body-1 text-light-slate'>
+                I’d love to chat about what you’re working on and how I could
+                contribute. I’m open to exploring various opportunities,
+                preferably remote positions. I bring a strong work ethic and a
+                positive attitude to everything I do, ensuring each project is
+                approached with purpose and attention to detail. Feel free to
+                reach out through the contact form below or check out my online
+                profiles for more information.
+              </p>
+              <ul className='flex items-center justify-start gap-4'>
+                <li>
+                  <Link href='https://github.com/stephmunez'>
+                    <a className='group' target='_blank'>
+                      <Github />
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href='https://www.linkedin.com/in/stephen-munez'>
+                    <a className='group' target='_blank'>
+                      <LinkedIn />
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section className='mb-20 flex w-[82.93%] flex-col gap-6 md:mb-24 md:w-[89.71%] md:gap-8 xl:mb-[6.875rem] xl:w-[77.08%] xl:flex-row xl:gap-[7.813rem]'>
+            <h2 className='font-h2 text-aquamarine xl:w-[31.53%]'>
+              Contact Me
+            </h2>
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className='flex w-full flex-col gap-6 xl:w-[57.21%]'
+            >
+              <div className='flex flex-col gap-2'>
+                <label
+                  className='font-body-1 w-max text-light-slate'
+                  htmlFor='user_name'
+                >
+                  Name
+                </label>
+                <input
+                  type='text'
+                  name='user_name'
+                  id='user_name'
+                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  placeholder='Jane Appleseed'
+                />
+              </div>
+
+              <div className='flex flex-col gap-2'>
+                <label
+                  className='font-body-1 w-max text-light-slate'
+                  htmlFor='user_email'
+                >
+                  Email
+                </label>
+                <input
+                  type='email'
+                  name='user_email'
+                  id='user_email'
+                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  placeholder='email@example.com'
+                />
+              </div>
+
+              <div className='flex flex-col gap-2'>
+                <label
+                  className='font-body-1 w-max text-light-slate'
+                  htmlFor='message'
+                >
+                  Message
+                </label>
+                <textarea
+                  name='message'
+                  id='message'
+                  rows='5'
+                  cols='32'
+                  className='placeholder:font-body-1 font-body-1 bg-light-slate/10 px-4 py-2 text-light-slate caret-aquamarine placeholder:text-light-slate/40 focus:outline-none'
+                  placeholder='How can I help?'
+                />
+              </div>
+
+              <button type='submit' className='btn'>
+                Send Message
+              </button>
+            </form>
+          </section>
+        </main>
+      </Layout>
+    </>
+  );
+};
+
+export default Contact;

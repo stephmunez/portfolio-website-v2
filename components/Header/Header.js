@@ -1,7 +1,7 @@
+import { Squash as Hamburger } from 'hamburger-react';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import useScrollDirection from '../../hooks/useScrollDirection';
-import Link from 'next/link';
-import { Squash as Hamburger } from 'hamburger-react';
 import Logo from '../icons/Logo';
 
 const Header = () => {
@@ -40,7 +40,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className='flex items-center'>
-                <Link href='mailto:sjtmunez@gmail.com'>
+                <Link href='/contact'>
                   <a className='font-nav'>Contact Me</a>
                 </Link>
               </li>
@@ -74,7 +74,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='mailto:sjtmunez@gmail.com'>
+                    <Link href='/contact'>
                       <a className='font-nav'>Contact Me</a>
                     </Link>
                   </li>

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Github from '../icons/Github';
 import LinkedIn from '../icons/LinkedIn';
 import Logo from '../icons/Logo';
-import Twitter from '../icons/Twitter';
 
 const Footer = () => {
   return (
@@ -27,7 +26,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className='flex items-center'>
-              <Link href='mailto:sjtmunez@gmail.com'>
+              <Link href='/contact'>
                 <a className='font-nav'>Contact Me</a>
               </Link>
             </li>
