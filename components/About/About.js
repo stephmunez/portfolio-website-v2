@@ -1,9 +1,9 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './About.module.scss';
+import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { motion } from 'framer-motion';
+import styles from './About.module.scss';
 
 const skills = [
   'JavaScript (ES6+)',
@@ -18,7 +18,7 @@ const skills = [
   'Tailwind CSS',
 ];
 
-const currentlyLearning = ['Node.js', 'Express.js', 'Python'];
+const currentlyLearning = ['Node.js', 'Express.js', 'MongoDB', 'Python'];
 
 const About = () => {
   return (
