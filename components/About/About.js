@@ -37,7 +37,7 @@ const About = () => {
           <div className='md:hidden'>
             <Image
               className={styles.img}
-              src='/images/homepage/image-homepage-profile@2x.jpg'
+              src='/images/homepage/image-homepage-profile.jpg'
               alt='Stephen Muñez'
               width='100%'
               height='100%'
@@ -49,7 +49,7 @@ const About = () => {
           <div className='hidden md:block xl:hidden'>
             <Image
               className={styles.img}
-              src='/images/homepage/image-homepage-profile@2x.jpg'
+              src='/images/homepage/image-homepage-profile.jpg'
               alt='Stephen Muñez'
               width='100%'
               height='250%'
@@ -61,7 +61,7 @@ const About = () => {
           <div className='hidden xl:block'>
             <Image
               className={styles.img}
-              src='/images/homepage/image-homepage-profile@2x.jpg'
+              src='/images/homepage/image-homepage-profile.jpg'
               alt='Stephen Muñez'
               width='100%'
               height='100%'
