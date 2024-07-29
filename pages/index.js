@@ -22,11 +22,11 @@ const Home = () => {
         <meta property='og:type' content='website' />
         <meta
           property='og:title'
-          content='Stephen Muñez | Frontend Developer'
+          content='Stephen Muñez | Full Stack Developer'
         />
         <meta
           property='og:description'
-          content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
+          content="I'm a full stack developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <meta property='og:url' content='https://stephmunez.dev/' />
         <meta property='og:site_name' content='Stephen Muñez' />
