@@ -35,7 +35,7 @@ const Hero = () => {
         transition={{ duration: 0.5, ease: 'easeIn', delay: 0.6 }}
       >
         <p className='max-w-[33.75rem] text-slate/80'>
-          I&apos;m a frontend developer who loves building engaging digital
+          I&apos;m a full stack developer who loves building engaging digital
           experiences. Currently, I focus on writing accessible HTML, using
           modern CSS practices and writing clean JavaScript at{' '}
           <Link href='https://www.meetsoci.com/'>

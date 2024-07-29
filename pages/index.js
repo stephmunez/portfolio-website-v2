@@ -8,11 +8,11 @@ const Home = () => {
   return (
     <>
       <PageHead>
-        <title>Stephen Muñez | Frontend Developer</title>
+        <title>Stephen Muñez | Full Stack Developer</title>
         {/* SEO */}
         <meta
           name='description'
-          content="I'm a frontend developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
+          content="I'm a full stack developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
         />
         <link rel='canonical' href='https://stephmunez.dev/' />
         <meta
