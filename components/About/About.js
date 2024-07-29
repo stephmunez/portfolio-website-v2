@@ -8,17 +8,20 @@ import styles from './About.module.scss';
 const skills = [
   'JavaScript (ES6+)',
   'TypeScript',
+  'Node.js',
   'React',
   'Vue.js',
   'Svelte',
+  'Express.js',
   'Firebase',
+  'MongoDB',
   'HTML5',
   'CSS3',
   'Sass',
   'Tailwind CSS',
 ];
 
-const currentlyLearning = ['Node.js', 'Express.js', 'MongoDB', 'Python'];
+const currentlyLearning = ['Python'];
 
 const About = () => {
   return (
