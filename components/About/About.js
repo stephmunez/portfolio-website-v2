@@ -29,7 +29,7 @@ const About = () => {
       id='about'
       className='mb-16 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%] xl:mb-40 xl:w-[77.08%]'
     >
-      <div className='flex w-full flex-col gap-12 md:flex-row md:items-center md:gap-[4.313rem] xl:gap-[7.813rem]'>
+      <div className='flex w-full flex-col gap-12 md:flex-row md:gap-[4.313rem] xl:gap-[7.813rem]'>
         <motion.div
           className={styles.wrapper}
           initial={{ opacity: 0, translateX: -50 }}
@@ -37,46 +37,20 @@ const About = () => {
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true }}
         >
-          <div className='md:hidden'>
-            <Image
-              className={styles.img}
-              src='/images/homepage/image-homepage-profile.jpg'
-              alt='Stephen Muñez'
-              width='100%'
-              height='100%'
-              layout='responsive'
-              objectFit='cover'
-              objectPosition='center top'
-            />
-          </div>
-          <div className='hidden md:block xl:hidden'>
-            <Image
-              className={styles.img}
-              src='/images/homepage/image-homepage-profile.jpg'
-              alt='Stephen Muñez'
-              width='100%'
-              height='250%'
-              layout='responsive'
-              objectFit='cover'
-              objectPosition='center top'
-            />
-          </div>
-          <div className='hidden xl:block'>
-            <Image
-              className={styles.img}
-              src='/images/homepage/image-homepage-profile.jpg'
-              alt='Stephen Muñez'
-              width='100%'
-              height='100%'
-              layout='responsive'
-              objectFit='cover'
-              objectPosition='center top'
-            />
-          </div>
+          <Image
+            className={styles.img}
+            src='/images/homepage/image-homepage-profile.jpg'
+            alt='Stephen Muñez'
+            width='100%'
+            height='100%'
+            layout='responsive'
+            objectFit='cover'
+            objectPosition='center top'
+          />
         </motion.div>
 
         <motion.div
-          className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:w-[49.20%] md:py-14 xl:w-[34.48%]'
+          className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:py-14 '
           initial={{ opacity: 0, translateX: 50 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
