@@ -5,6 +5,7 @@
   height: 100%;
   border-radius: 4px;
   background-color: #64ffda;
+  margin-top: 48px;
 
   &:hover,
   &:focus,
@@ -89,12 +90,13 @@
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 40.78%;
+    max-width: 448px;
+    margin-top: 56px;
   }
 }
 
 @media (min-width: 1280px) {
   .wrapper {
-    width: 53.2%;
+    max-width: 512px;
   }
 }
