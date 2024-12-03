@@ -97,8 +97,10 @@ const About = () => {
             </p>
             <p className='font-body-1 text-light-slate'>
               I’ve adopted a ’technology-agnostic’ approach to development,
-              which is something I learned from my seniors. Here are a few
-              technologies I’ve been working with recently:
+              which is something I learned from my seniors. As much as possible,
+              I try not to stick to one tech stack while maintaining a strong
+              grasp of the fundamentals. So here are a few technologies I’ve
+              been working with recently:
             </p>
           </div>
           <ul className={styles.skillsList}>
