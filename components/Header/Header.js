@@ -22,8 +22,8 @@ const Header = () => {
         }`}
       >
         <nav className='relative flex w-[82.93%] items-center justify-between md:w-[89.71%] xl:w-[77.08%]'>
-          <Link href='/' aria-label='Go to homepage'>
-            <a className='group'>
+          <Link href='/'>
+            <a className='group' aria-label='Go to homepage'>
               <Logo />
             </a>
           </Link>
