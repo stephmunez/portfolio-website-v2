@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='flex w-full flex-col items-center bg-light-navy py-14 md:py-6 xl:py-8'>
       <div className='flex flex-col items-center gap-8 md:w-[89.71%] md:flex-row md:justify-between xl:w-[77.08%]'>
         <div className='flex flex-col items-center gap-10 md:flex-row md:gap-12'>
-          <Link href='/'>
+          <Link href='/' aria-label='Go to homepage'>
             <a className='group'>
               <Logo />
             </a>
