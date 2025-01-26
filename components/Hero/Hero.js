@@ -34,7 +34,7 @@ const Hero = () => {
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5, ease: 'easeIn', delay: 0.6 }}
       >
-        <p className='max-w-[33.75rem] text-slate/80'>
+        <p className='max-w-[33.75rem] text-slate'>
           I&apos;m a web developer who loves building engaging digital
           experiences. Currently, I focus on writing accessible HTML, using
           modern CSS practices and writing clean JavaScript at{' '}
