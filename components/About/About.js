@@ -26,7 +26,11 @@ const skills = {
     title: 'API/Query Language',
     items: ['REST', 'GraphQL'],
   },
-  databases: {
+  relationalDatabases: {
+    title: 'Relational Databases',
+    items: ['PostgreSQL', 'MySQL'],
+  },
+  nosqlDatabases: {
     title: 'NoSQL Databases',
     items: ['MongoDB', 'Redis'],
   },
