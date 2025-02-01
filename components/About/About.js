@@ -44,7 +44,7 @@ const skills = {
   },
   auth: {
     title: 'Authentication',
-    items: ['JSON Web Token', 'OAuth'],
+    items: ['Cookies', 'Sessions', 'JSON Web Token', 'OAuth'],
   },
   cms: {
     title: 'Headless CMS',
