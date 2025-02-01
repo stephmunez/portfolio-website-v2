@@ -62,11 +62,12 @@
 
 .skillsList {
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  grid-template-columns: repeat(1, minmax(140px, 200px));
   grid-gap: 0 10px;
   padding: 0;
   overflow: hidden;
   list-style: none;
+  margin-left: 24px;
 
   li {
     position: relative;
