@@ -5,21 +5,60 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styles from './About.module.scss';
 
-const skills = [
-  'JavaScript (ES6+)',
-  'TypeScript',
-  'Node.js',
-  'React',
-  'Vue.js',
-  'Svelte',
-  'Express.js',
-  'MongoDB',
-  'Firebase',
-  'HTML5',
-  'CSS3',
-  'Sass',
-  'Tailwind CSS',
-];
+const skills = {
+  core: {
+    title: 'Core Web Technologies/Supersets',
+    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+  },
+  frontend: {
+    title: 'Frontend Frameworks/Libraries',
+    items: ['React', 'Vue.js', 'Svelte'],
+  },
+  metaFrameworks: {
+    title: 'Meta-frameworks',
+    items: ['Next.js', 'Nuxt.js', 'SvelteKit'],
+  },
+  backend: {
+    title: 'Server-side Language/Frameworks',
+    items: ['Node.js', 'Express.js'],
+  },
+  api: {
+    title: 'API/Query Language',
+    items: ['REST', 'GraphQL'],
+  },
+  databases: {
+    title: 'NoSQL Databases',
+    items: ['MongoDB', 'Redis'],
+  },
+  cloudDatabases: {
+    title: 'Cloud Databases',
+    items: ['Firebase', 'Supabase'],
+  },
+  orm: {
+    title: 'Database ORMs',
+    items: ['Mongoose', 'Prisma', 'Drizzle'],
+  },
+  auth: {
+    title: 'Authentication',
+    items: ['JSON Web Token', 'OAuth'],
+  },
+  cms: {
+    title: 'Headless CMS',
+    items: ['Contentful', 'Headless WordPress'],
+  },
+  css: {
+    title: 'CSS Preprocessors/Frameworks',
+    items: ['Sass', 'Tailwind CSS'],
+  },
+  design: {
+    title: 'Design Tools',
+    items: ['Figma'],
+  },
+  versionControl: {
+    title: 'Version Control Tools',
+    items: ['Git', 'GitHub'],
+  },
+};
 
 const currentlyLearning = ['Python'];
 
@@ -29,7 +68,7 @@ const About = () => {
       id='about'
       className='mb-16 flex w-[82.93%] flex-col md:mb-32 md:w-[89.71%] xl:mb-40 xl:w-[77.08%]'
     >
-      <div className='flex w-full flex-col gap-12 md:flex-row md:gap-[4.313rem] xl:gap-[7.813rem]'>
+      <div className='flex w-full flex-col gap-12 md:items-center md:gap-[4.313rem] lg:flex-row lg:items-start xl:gap-[7.813rem]'>
         <motion.div
           className={styles.wrapper}
           initial={{ opacity: 0, translateX: -50 }}
@@ -103,11 +142,20 @@ const About = () => {
               been working with recently:
             </p>
           </div>
-          <ul className={styles.skillsList}>
-            {skills.map((skill) => (
-              <li key={uuidv4()}>{skill}</li>
+          <div className='grid gap-6 sm:grid-cols-[repeat(2,minmax(0,max-content))]'>
+            {Object.values(skills).map(({ title, items }, index) => (
+              <div key={index} className='flex flex-col gap-2'>
+                <h3 className='font-body-1 text-aquamarine'>
+                  <span className='text-light-slate'>{index + 1}.</span> {title}
+                </h3>
+                <ul className={styles.skillsList}>
+                  {items.map((skill) => (
+                    <li key={uuidv4()}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
           <div>
             <p className='font-body-1 text-light-slate'>
               and I’m currently learning...
