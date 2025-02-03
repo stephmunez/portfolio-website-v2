@@ -3,68 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { currentlyLearning, skills } from '../../data/skills';
 import styles from './About.module.scss';
-
-const skills = {
-  core: {
-    title: 'Core Web Technologies/Supersets',
-    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
-  },
-  frontend: {
-    title: 'Frontend Frameworks/Libraries',
-    items: ['React', 'Vue.js', 'Svelte'],
-  },
-  metaFrameworks: {
-    title: 'Meta-frameworks',
-    items: ['Next.js', 'Nuxt.js', 'SvelteKit'],
-  },
-  backend: {
-    title: 'Server-side Language/Frameworks',
-    items: ['Node.js', 'Express.js'],
-  },
-  api: {
-    title: 'API/Query Language',
-    items: ['REST', 'GraphQL'],
-  },
-  relationalDatabases: {
-    title: 'Relational Databases',
-    items: ['PostgreSQL', 'MySQL'],
-  },
-  nosqlDatabases: {
-    title: 'NoSQL Databases',
-    items: ['MongoDB', 'Redis'],
-  },
-  cloudDatabases: {
-    title: 'Cloud Databases',
-    items: ['Firebase', 'Supabase'],
-  },
-  orm: {
-    title: 'Database ORMs',
-    items: ['Mongoose', 'Prisma', 'Drizzle'],
-  },
-  auth: {
-    title: 'Authentication',
-    items: ['Cookies', 'Sessions', 'JSON Web Token', 'OAuth'],
-  },
-  cms: {
-    title: 'Headless CMS',
-    items: ['Contentful', 'Headless WordPress'],
-  },
-  css: {
-    title: 'CSS Preprocessors/Frameworks',
-    items: ['Sass', 'Tailwind CSS'],
-  },
-  design: {
-    title: 'Design Tools',
-    items: ['Figma'],
-  },
-  versionControl: {
-    title: 'Version Control Tools',
-    items: ['Git', 'GitHub'],
-  },
-};
-
-const currentlyLearning = ['Python'];
 
 const About = () => {
   return (
@@ -146,28 +86,32 @@ const About = () => {
               been working with recently:
             </p>
           </div>
-          <div className='grid gap-6 sm:grid-cols-[repeat(2,minmax(0,max-content))]'>
-            {Object.values(skills).map(({ title, items }, index) => (
-              <div key={index} className='flex flex-col gap-2'>
-                <h3 className='font-body-1 text-aquamarine'>
-                  <span className='text-light-slate'>{index + 1}.</span> {title}
-                </h3>
-                <ul className={styles.skillsList}>
-                  {items.map((skill) => (
-                    <li key={uuidv4()}>{skill}</li>
-                  ))}
-                </ul>
-              </div>
+          <ul className='flex flex-wrap'>
+            {skills.map(({ title, image }) => (
+              <li key={uuidv4()} className='min-h-[28px]'>
+                <img
+                  src={image}
+                  alt={`${title} skill badge`}
+                  className='object-contain'
+                />
+              </li>
             ))}
-          </div>
+          </ul>
+
           <div>
             <p className='font-body-1 text-light-slate'>
               and I’m currently learning...
             </p>
           </div>
-          <ul className={styles.skillsList}>
-            {currentlyLearning.map((skill) => (
-              <li key={uuidv4()}>{skill}</li>
+          <ul className='flex flex-wrap'>
+            {currentlyLearning.map(({ title, image }) => (
+              <li key={uuidv4()} className='min-h-[28px]'>
+                <img
+                  src={image}
+                  alt={`${title} skill badge`}
+                  className='object-contain'
+                />
+              </li>
             ))}
           </ul>
           <div className='flex flex-col gap-4'>
