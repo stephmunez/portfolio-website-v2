@@ -86,7 +86,7 @@ const About = () => {
               been working with recently:
             </p>
           </div>
-          <ul className='flex flex-wrap'>
+          <ul className='flex flex-wrap gap-1'>
             {skills.map(({ title, image }) => (
               <li key={uuidv4()} className='min-h-[28px]'>
                 <img
@@ -103,7 +103,7 @@ const About = () => {
               and I’m currently learning...
             </p>
           </div>
-          <ul className='flex flex-wrap'>
+          <ul className='flex flex-wrap gap-1'>
             {currentlyLearning.map(({ title, image }) => (
               <li key={uuidv4()} className='min-h-[28px]'>
                 <img
