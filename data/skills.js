@@ -51,6 +51,11 @@ export const skills = [
       'https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white',
   },
   {
+    title: 'Gatsby',
+    image:
+      'https://img.shields.io/badge/Gatsby-639?logo=gatsby&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Node.js',
     image:
       'https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=fff&style=for-the-badge',
@@ -165,7 +170,21 @@ export const skills = [
     image:
       'https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=fff&style=for-the-badge',
   },
-
+  {
+    title: 'Axios',
+    image:
+      'https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'Postman',
+    image:
+      'https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'Markdown',
+    image:
+      'https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=fff&style=for-the-badge',
+  },
   {
     title: 'Git',
     image:
