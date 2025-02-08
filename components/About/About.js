@@ -33,7 +33,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className='flex w-full flex-col gap-6 border-y border-solid border-aquamarine py-12 md:py-14 '
+          className='flex w-full flex-col gap-4 border-y border-solid border-aquamarine py-12 md:py-14 '
           initial={{ opacity: 0, translateX: 50 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
