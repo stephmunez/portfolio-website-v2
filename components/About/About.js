@@ -46,13 +46,7 @@ const About = () => {
               the web.
             </p>
             <p className='font-body-1 text-light-slate'>
-              My interest in web development started back in 2020 when I tried
-              learning how to code during the covid lock down out of boredom —
-              turns out taking Jennifer Niederst Robbins&apos;s Learning Web
-              Design book made me fall in love with the craft!
-            </p>
-            <p className='font-body-1 text-light-slate'>
-              Fast-forward to today, I’ve had the privilege of working at{' '}
+              I’ve had the privilege of working at{' '}
               <Link href='https://www.unit.network/'>
                 <a className='text-aquamarine hover:underline active:underline'>
                   a Web3 start-up
@@ -79,41 +73,44 @@ const About = () => {
               .
             </p>
             <p className='font-body-1 text-light-slate'>
-              I’ve adopted a ’technology-agnostic’ approach to development,
-              which is something I learned from my seniors. As much as possible,
-              I try not to stick to one tech stack while maintaining a strong
-              grasp of the fundamentals. So here are a few technologies I’ve
-              been working with recently:
+              Throughout my career, I’ve embraced a technology-agnostic approach
+              to development—a mindset I learned from my seniors. I strive to
+              maintain a strong grasp of the fundamentals while remaining
+              adaptable across different tech stacks.
             </p>
           </div>
-          <ul className='flex flex-wrap gap-1'>
-            {skills.map(({ title, image }) => (
-              <li key={uuidv4()} className='min-h-[28px]'>
-                <img
-                  src={image}
-                  alt={`${title} skill badge`}
-                  className='object-contain'
-                />
-              </li>
-            ))}
-          </ul>
-
-          <div>
+          <div className='flex flex-col gap-4'>
+            <p className='font-body-1 text-light-slate'>
+              Here are a few technologies I’ve been working with recently:
+            </p>
+            <ul className='flex flex-wrap gap-1'>
+              {skills.map(({ title, image }) => (
+                <li key={uuidv4()} className='min-h-[28px]'>
+                  <img
+                    src={image}
+                    alt={`${title} skill badge`}
+                    className='object-contain'
+                  />
+                </li>
+              ))}
+            </ul>{' '}
+          </div>
+          <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
               and I’m currently learning...
             </p>
+            <ul className='flex flex-wrap gap-1'>
+              {currentlyLearning.map(({ title, image }) => (
+                <li key={uuidv4()} className='min-h-[28px]'>
+                  <img
+                    src={image}
+                    alt={`${title} skill badge`}
+                    className='object-contain'
+                  />
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className='flex flex-wrap gap-1'>
-            {currentlyLearning.map(({ title, image }) => (
-              <li key={uuidv4()} className='min-h-[28px]'>
-                <img
-                  src={image}
-                  alt={`${title} skill badge`}
-                  className='object-contain'
-                />
-              </li>
-            ))}
-          </ul>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
               When I’m not coding, you’ll find me getting my sweat on to offset
