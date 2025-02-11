@@ -126,6 +126,11 @@ export const skills = [
       'https://img.shields.io/badge/Passport-34E27A?logo=passport&logoColor=000&style=for-the-badge',
   },
   {
+    title: 'Auth0',
+    image:
+      'https://img.shields.io/badge/Auth0-EB5424?logo=auth0&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Contentful',
     image:
       'https://img.shields.io/badge/Contentful-2478CC?logo=contentful&logoColor=fff&style=for-the-badge',
