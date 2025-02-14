@@ -181,6 +181,11 @@ export const skills = [
       'https://img.shields.io/badge/Heroku-430098?logo=heroku&logoColor=fff&style=for-the-badge',
   },
   {
+    title: 'Hostinger',
+    image:
+      'https://img.shields.io/badge/Hostinger-673DE6?logo=hostinger&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Axios',
     image:
       'https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=fff&style=for-the-badge',
