@@ -22,7 +22,7 @@ const About = () => {
         >
           <Image
             className={styles.img}
-            src='/images/homepage/image-homepage-profile.jpg'
+            src='/images/homepage/image-homepage-profile.png'
             alt='Stephen Muñez'
             width='100%'
             height='100%'
