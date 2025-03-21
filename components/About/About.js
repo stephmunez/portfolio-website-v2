@@ -73,15 +73,15 @@ const About = () => {
               .
             </p>
             <p className='font-body-1 text-light-slate'>
-              Throughout my career, I’ve embraced a technology-agnostic approach
-              to development—a mindset I learned from my seniors. I strive to
-              maintain a strong grasp of the fundamentals while remaining
-              adaptable across different tech stacks.
+              Throughout my career, I’ve embraced a ’technology-agnostic’
+              approach to development—a mindset I learned from my seniors. I
+              focus on mastering the fundamentals while staying adaptable across
+              different tech stacks.
             </p>
           </div>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Here are a few technologies I’ve been working with recently:
+              Here are a few technologies I’ve been working with lately:
             </p>
             <ul className='flex flex-wrap gap-1'>
               {skills.map(({ title, image }) => (
