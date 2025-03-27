@@ -218,4 +218,14 @@ export const currentlyLearning = [
     image:
       'https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=for-the-badge',
   },
+  {
+    title: 'Bun',
+    image:
+      'https://img.shields.io/badge/Bun-000?logo=bun&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'Deno',
+    image:
+      'https://img.shields.io/badge/Deno-70FFAF?logo=deno&logoColor=000&style=for-the-badge',
+  },
 ];
