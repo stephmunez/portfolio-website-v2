@@ -81,7 +81,13 @@ const About = () => {
           </div>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Here are a few technologies I’ve been working with lately:
+              I have a deep passion for web technologies and have made it a goal
+              to learn a new technology or framework each quarter over the past
+              few years. This commitment helps me stay at the forefront of web
+              development innovation.
+            </p>
+            <p className='font-body-1 text-light-slate'>
+              Here are some of the technologies I’ve been working with recently:
             </p>
             <ul className='flex flex-wrap gap-1'>
               {skills.map(({ title, image }) => (
