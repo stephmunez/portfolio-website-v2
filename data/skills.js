@@ -141,6 +141,11 @@ export const skills = [
       'https://img.shields.io/badge/WordPress-21759B?logo=wordpress&logoColor=fff&style=for-the-badge',
   },
   {
+    title: 'Socket.io',
+    image:
+      'https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Sass',
     image:
       'https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=for-the-badge',

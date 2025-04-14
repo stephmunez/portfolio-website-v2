@@ -29,7 +29,7 @@ const Home = () => {
         <meta property='og:site_name' content='Stephen Muñez' />
         <meta
           property='og:image'
-          content='https://stephmunez.dev/images/homepage/image-homepage-profile@2x.jpg'
+          content='https://stephmunez.dev/images/homepage/image-homepage-profile.jpg'
         />
       </PageHead>
 
