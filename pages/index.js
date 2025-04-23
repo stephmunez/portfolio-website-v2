@@ -33,7 +33,7 @@ const Home = () => {
         />
         <meta
           name='keywords'
-          content='web developer, frontend developer, fullstack developer, HTML, CSS, JavaScript'
+          content='web developer, frontend developer, fullstack developer, HTML, CSS, JavaScript, Stephen Muñez'
         />
         <meta http-equiv='X-UA-Compatible' content='IE=edge' />
         <meta name='author' content='Stephen Muñez' />
