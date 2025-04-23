@@ -31,6 +31,12 @@ const Home = () => {
           property='og:image'
           content='https://stephmunez.dev/images/homepage/image-homepage-profile.jpg'
         />
+        <meta
+          name='keywords'
+          content='web developer, frontend developer, fullstack developer, HTML, CSS, JavaScript'
+        />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='author' content='Stephen Muñez' />
       </PageHead>
 
       <Layout>
