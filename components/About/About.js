@@ -72,17 +72,18 @@ const About = () => {
               .
             </p>
             <p className='font-body-1 text-light-slate'>
-              Throughout my career, I’ve embraced a ’technology-agnostic’
-              approach to development—a mindset I learned from my seniors. I
-              focus on mastering the fundamentals while staying adaptable across
+              Throughout my career, I’ve embraced a{' '}
+              <span class='italic'>’technology-agnostic’</span> approach to
+              development—a mindset I learned from my seniors. I focus on
+              mastering the fundamentals while staying adaptable across
               different tech stacks.
             </p>
           </div>
           <div className='flex flex-col gap-4'>
             <p className='font-body-1 text-light-slate'>
-              Having deep passion for web technologies, I have made it a goal to
-              learn a new technology or framework each quarter over the past few
-              years. This commitment helps me stay at the forefront of web
+              I have a deep passion for web technologies and have made it a goal
+              to learn a new technology or framework each quarter over the past
+              few years. This commitment helps me stay at the forefront of web
               development innovation.
             </p>
             <p className='font-body-1 text-light-slate'>
