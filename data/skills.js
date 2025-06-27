@@ -101,6 +101,11 @@ export const skills = [
       'https://img.shields.io/badge/Supabase-3FCF8E?logo=supabase&logoColor=fff&style=for-the-badge',
   },
   {
+    title: 'Appwrite',
+    image:
+      'https://img.shields.io/badge/Appwrite-FD366E?logo=appwrite&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Mongoose',
     image:
       'https://img.shields.io/badge/Mongoose-800?logo=mongoose&logoColor=fff&style=for-the-badge',
