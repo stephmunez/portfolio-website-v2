@@ -6,9 +6,9 @@ export const skills = [
       'https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge',
   },
   {
-    title: 'CSS3',
+    title: 'CSS',
     image:
-      'https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge',
+      'https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge',
   },
   {
     title: 'JavaScript',
