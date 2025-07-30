@@ -151,9 +151,24 @@ export const skills = [
       'https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=for-the-badge',
   },
   {
+    title: 'Zod',
+    image:
+      'https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Socket.io',
     image:
       'https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'OpenAI',
+    image:
+      'https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'Google Gemini',
+    image:
+      'https://img.shields.io/badge/Google%20Gemini-8E75B2?logo=googlegemini&logoColor=fff&style=for-the-badge',
   },
   {
     title: 'Sass',
@@ -174,6 +189,11 @@ export const skills = [
     title: 'Framer',
     image:
       'https://img.shields.io/badge/Framer-05F?logo=framer&logoColor=fff&style=for-the-badge',
+  },
+  {
+    title: 'shadcn/ui',
+    image:
+      'https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff&style=for-the-badge',
   },
   {
     title: 'Figma',
