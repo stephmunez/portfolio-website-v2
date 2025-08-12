@@ -12,7 +12,7 @@ const Home = () => {
         {/* SEO */}
         <meta
           name="description"
-          content="I'm a full stack developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
+          content="I’m a full-stack developer passionate about crafting fast, accessible, and visually engaging digital experiences. I write clean, maintainable code, leveraging modern CSS, semantic HTML, and JavaScript best practices, to deliver results built to last."
         />
         <link rel="canonical" href="https://stephmunez.dev/" />
         <meta
@@ -26,7 +26,7 @@ const Home = () => {
         />
         <meta
           property="og:description"
-          content="I'm a full stack developer who loves building engaging digital experiences. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript."
+          content="I’m a full-stack developer crafting fast, accessible, and visually engaging digital experiences. I focus on clean, maintainable code—using modern CSS, accessible HTML, and JavaScript best practices to deliver results that last."
         />
         <meta property="og:url" content="https://stephmunez.dev/" />
         <meta property="og:site_name" content="Stephen Muñez" />
