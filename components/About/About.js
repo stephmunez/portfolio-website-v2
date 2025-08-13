@@ -52,7 +52,7 @@ const About = () => {
               choosing the tools that best fit your needs, not just my
               preferences. While React with MERN or Next.js is often my go-to, I
               stay focused on mastering fundamentals and remaining adaptable
-              across stacks.
+              across tech stacks.
             </p>
             <p className="font-body-1 text-light-slate">
               I&apos;ve helped{' '}
@@ -86,12 +86,12 @@ const About = () => {
           <div className="flex flex-col gap-4">
             <p className="font-body-1 text-light-slate">
               I’m committed to staying ahead of the curve, learning a new
-              technology or framework every quarter. This helps me bring you the
+              technology or framework every quarter. This helps me bring the
               latest innovations in web development without compromising
               stability or maintainability.
             </p>
             <p className="font-body-1 text-light-slate">
-              Here are some of the technologies I work with recently:
+              Here are some of the technologies I’ve been working with recently:
             </p>
             <ul className="flex flex-wrap gap-1">
               {skills.map(({ title, image }) => (
@@ -135,7 +135,7 @@ const About = () => {
               life.
             </p>
             <p className="font-body-1 text-light-slate">
-              I’d love for you to check out my work.
+              I’d also love for you to check out my work.
             </p>
           </div>
           <Link href="/portfolio">
