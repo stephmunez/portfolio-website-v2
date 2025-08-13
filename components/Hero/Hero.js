@@ -36,8 +36,8 @@ const Hero = () => {
         <p className="max-w-[33.75rem] text-slate">
           I’m a full stack developer passionate about crafting fast, accessible,
           and visually engaging digital experiences. I write clean, maintainable
-          code, leveraging semantic HTML, modern CSS, and JavaScript best
-          practices, to deliver results built to last.
+          code using semantic HTML, modern CSS, and JavaScript best practices to
+          deliver solutions designed to last.
         </p>
       </motion.div>
       <ScrollIntoView selector="#about" scrollOptions={{ behavior: 'smooth' }}>
