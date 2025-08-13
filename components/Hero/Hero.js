@@ -34,9 +34,9 @@ const Hero = () => {
         transition={{ duration: 0.5, ease: 'easeIn', delay: 0.6 }}
       >
         <p className="max-w-[33.75rem] text-slate">
-          I’m a full-stack developer passionate about crafting fast, accessible,
+          I’m a full stack developer passionate about crafting fast, accessible,
           and visually engaging digital experiences. I write clean, maintainable
-          code, leveraging modern CSS, semantic HTML, and JavaScript best
+          code, leveraging semantic HTML, modern CSS, and JavaScript best
           practices, to deliver results built to last.
         </p>
       </motion.div>
