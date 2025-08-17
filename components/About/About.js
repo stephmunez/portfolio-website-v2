@@ -135,7 +135,8 @@ const About = () => {
               life.
             </p>
             <p className="font-body-1 text-light-slate">
-              I’d also love for you to check out my work.
+              Feel free to check out my work and see some of the projects I’ve
+              been building. :)
             </p>
           </div>
           <Link href="/portfolio">
