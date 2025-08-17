@@ -79,8 +79,8 @@ const About = () => {
                   one of the top multi-location marketing platform in the U.S.
                 </a>
               </Link>{' '}
-              deliver digital digital experiences that connect with audiences
-              and drive results.
+              deliver digital experiences that connect with audiences and drive
+              results.
             </p>
           </div>
           <div className="flex flex-col gap-4">
