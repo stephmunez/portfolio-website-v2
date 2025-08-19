@@ -136,6 +136,11 @@ export const skills = [
       'https://img.shields.io/badge/Better%20Auth-FFF?logo=betterauth&logoColor=000&style=for-the-badge',
   },
   {
+    title: 'Clerk',
+    image:
+      'https://img.shields.io/badge/Clerk-6C47FF?logo=clerk&logoColor=fff&style=for-the-badge',
+  },
+  {
     title: 'Contentful',
     image:
       'https://img.shields.io/badge/Contentful-2478CC?logo=contentful&logoColor=fff&style=for-the-badge',
