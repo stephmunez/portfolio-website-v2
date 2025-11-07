@@ -91,7 +91,7 @@ const About = () => {
               stability or maintainability.
             </p>
             <p className="font-body-1 text-light-slate">
-              Here are some of the technologies I’ve been working with recently:
+              Here are some of the technologies I&apos;ve worked with recently:
             </p>
             <ul className="flex flex-wrap gap-1">
               {skills.map(({ title, image }) => (
